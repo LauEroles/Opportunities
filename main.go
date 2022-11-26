@@ -30,7 +30,7 @@ type SeniorityType int
  )
 */
 
-//Defined a type of ths date structure person
+//Defined a type of this date structure person
 
 type person struct {
 	fullname        string
@@ -43,14 +43,14 @@ type person struct {
 	observations string
 }
 
-//Defined a type of ths date structure contact
+//Defined a type of this date structure contact
 
 type contact struct {
 	name     string
 	contacts []person
 }
 
-//Inicializar contact( a slice of  person)
+//initialize contact( a slice of  person)
 
 func generateContacts() contact {
 	//initialize a person
@@ -92,10 +92,6 @@ func generateContacts() contact {
 
 func showContacts(oneContact contact) {
 	fmt.Println(" The agenda have the following contacts: ")
-	/*for i, ingrediente := range unaReceta.Ingredientes {
-		fmt.Printf("%d - %s - comprar %v %s - Es indispensable? %v\n", i+1, ingrediente.Nombre, ingrediente.Cantidad, ingrediente.Unidad, ingrediente.Indispensable)
-	}
-	*/
 
 	for i, agenda := range oneContact.contacts {
 		fmt.Println("=======================================================")
@@ -111,13 +107,3 @@ func showContacts(oneContact contact) {
 	}
 
 }
-
-/*func showPerson(aPerson person) {
-	fmt.Println("Fullname: " + aPerson.fullname)
-	fmt.Println("Country: " + aPerson.country)
-	fmt.Println("LinkedIn Profile : " + aPerson.linkedinProfile)
-	fmt.Println("email: " + aPerson.email)
-	fmt.Println("Speciality: " + aPerson.speciality)
-	fmt.Println("Techs: " + aPerson.techs)
-
-}*/
